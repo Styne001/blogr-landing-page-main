@@ -7,6 +7,7 @@ body{
 }
 .section1{
     background-color: hsl(13, 100%, 72%);
+    background-image: url("/images/bg-pattern-intro.svg");
     border-bottom-left-radius: 100px;
     color: white;
     max-width: 100%;
@@ -19,6 +20,8 @@ body{
     height: auto;
     top: -1250px;
     left: -400px;
+    opacity: .4;
+    overflow: hidden;
 }
 
 h1{
@@ -102,6 +105,8 @@ nav li{
 .register li button{
     padding: 15px 30px;
     border-radius: 30px;
+    border: none;
+    outline: none;
 }
 
 .register li a{
@@ -139,8 +144,79 @@ nav li{
 .section1 .starter button{
     padding: 15px 30px;
     border-radius: 30px;
+    border: none;
+    outline: none;
 }
 
 .section1 .starter button a{
-    text-decoration:none
+    text-decoration:none;
+    color:hsl(13, 100%, 72%);
+}
+
+.section1 .learn{
+    background-color: hsl(13, 100%, 72%);
+}
+
+.section1 .starter .learn a{
+    color: white;
+}
+
+
+.section2{
+    height: 800px;
+}
+
+.section2 img{
+    position: absolute;
+    max-width: 800px;
+    top: 600px;
+    left: 800px;
+}
+
+.section2 .design h2{
+    color:hsl(208, 49%, 24%);
+    position: relative;
+    top: 100px;
+    left: 500px;
+    font-size: 40px;
+}
+
+.section2 .intro{
+    color:hsl(208, 49%, 24%);
+    position: relative;
+    width: 460px;
+    left: 200px;
+    top: 150px;
+    box-sizing: border-box;
+}
+
+.section2 .robust{
+    color:hsl(208, 49%, 24%);
+    position: relative;
+    width: 450px;
+    left: 200px;
+    top: 200px;
+    box-sizing: border-box;
+}
+
+.section3{
+    background-color: hsl(237, 23%, 32%);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    position: relative;
+    height: 400px;
+    top: 100px;
+}
+
+.section3 img{
+    position:relative;
+    top: -70px;
+}
+
+.section3 .state{
+    position: relative;
+    color: white;
+    top: -500px;
+    box-sizing: border-box;
+    left: 600px;
 }
