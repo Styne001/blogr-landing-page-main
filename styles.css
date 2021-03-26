@@ -3,9 +3,11 @@ body{
     font-weight: 300, 600;
     font-size: 16px;
     margin: 0px 0px;
-    max-width: 100%;
+    max-width: 1440px;
+    line-height: 30px;
 }
 .section1{
+    position: relative;
     background-color: hsl(13, 100%, 72%);
     background-image: url("/images/bg-pattern-intro.svg");
     border-bottom-left-radius: 100px;
@@ -123,7 +125,7 @@ nav li{
 
 .welcome span{
     position: relative;
-    top: -100px;
+    top: -50px;
     font-size: 22px;
     left: 180px;
 }
@@ -163,20 +165,21 @@ nav li{
 
 
 .section2{
-    height: 800px;
+    position: relative;
 }
 
 .section2 img{
     position: absolute;
-    max-width: 800px;
-    top: 600px;
+    width: 800px;
+    height: 800px;
     left: 800px;
+    top: 25px;
 }
 
 .section2 .design h2{
     color:hsl(208, 49%, 24%);
     position: relative;
-    top: 100px;
+    top: 50px;
     left: 500px;
     font-size: 40px;
 }
@@ -186,7 +189,7 @@ nav li{
     position: relative;
     width: 460px;
     left: 200px;
-    top: 150px;
+    top: 160px;
     box-sizing: border-box;
 }
 
@@ -205,7 +208,7 @@ nav li{
     border-top-right-radius: 100px;
     position: relative;
     height: 400px;
-    top: 100px;
+    top: 400px;
 }
 
 .section3 img{
@@ -218,5 +221,81 @@ nav li{
     color: white;
     top: -500px;
     box-sizing: border-box;
+    left: 600px;
+    width: 460px;
+}
+
+.section3 .state h2{
+    font-size: 34px;
+}
+
+.section4{
+    position: relative;
+    top: 50px;
+}
+
+.section4 img{
+    position: relative;
+    box-sizing: border-box;
+    width: 750px;
+    height: 750px;
+    left: -210px;
+    top: 450px;
+}
+
+.section4 .free{
+    position: relative;
+    top: -150px;
+    left: 600px;
+    width: 460px;
+    color:hsl(208, 49%, 24%);
+}
+
+.section4 .tool{
+    position: relative;
+    top: -115px;
+    left: 600px;
+    width: 460px;
+    color:hsl(208, 49%, 24%);
+}
+.section4 div h2{
+    font-size: 25px;
+}
+
+footer{
+    position: relative;
+    background-color: hsl(237, 17%, 21%);
+    border-top-right-radius: 100px;
+    top: 200px;
+    height: 300px;
+    color: white;
+}
+
+footer div ul li{
+    text-decoration: none;
+}
+
+footer .product-list{
+    position: absolute;
+    left: 300px;
+    top: 50px;
+}
+
+footer .company-list{
+    position: absolute;
+    left: 600px;
+    top: 50px;
+    text-decoration: none;
+}
+
+footer .connect-list{
+    position: absolute;
+    left: 900px;
+    top: 50px;
+}
+
+footer .attribution{
+    position: absolute;
+    top: 250px;
     left: 600px;
 }
