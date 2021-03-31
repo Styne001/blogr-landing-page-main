@@ -18,35 +18,45 @@
 </head>
 <body>
   
-  <section class="section1">
+  <head class="section1">
     <img src="/images/bg-pattern-intro.svg" alt="" class="intro">
     <img src="/images/logo.svg" alt="" class="logo">
     <nav class="main-nav">
       <ul>
-        <li><a class="product" href="#">Product</a>
-          <div class="product-content">
-            <a href="">Overview</a>
-            <a href="">Pricing</a>
-            <a href="">Marketplace</a>
-            <a href="">Features</a>
-            <a href="">Integrations</a>
+        <li class="main-nav-item" onmouseover="showDropDownList(this)" onmouseout="hideDropDownList(this)">
+          <a href="#">Product</a>
+          <img class="main-nav-arrow" src="/images/icon-arrow-light.svg" alt="">
+          <div class="nav-item-content">
+            <ul class="nav-item-content-list">
+              <li><a href="#">Overview</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Marketplace</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Integrations</a></li>
+            </ul> 
           </div>
         </li>
         
-        <li><a class="company" href="#">Company</a>
-          <div class="company-content">
-            <a href="">About</a>
-            <a href="">Team</a>
-            <a href="">Blog</a>
-            <a href="">Careers</a>
+        <li class="main-nav-item" onmouseover="showDropDownList(this)" onmouseout="hideDropDownList(this)">
+          <a href="#">Company</a>
+          <img class="main-nav-arrow" src="/images/icon-arrow-light.svg" alt="">
+          <div class="nav-item-content">
+            <ul class="nav-item-content-list">
+              <li><a href="#">About</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Careers</a></li>
           </div>
         </li>
 
-        <li><a class="connect" href="#">Connect</a>
-          <div class="connect-content">
-            <a href="">Contact</a>
-            <a href="">Newsletter</a>
-            <a href="">LinkedIn</a>
+        <li class="main-nav-item" onmouseover="showDropDownList(this)" onmouseout="hideDropDownList(this)">
+          <a href="#">Connect</a>
+          <img class="main-nav-arrow" src="/images/icon-arrow-light.svg" alt="">
+          <div class="nav-item-content">
+            <ul class="nav-item-content-list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="">Newsletter</a></li>
+              <li><a href="">linkedIn</a></li>
           </div>
         </li>
       </ul>        
@@ -74,7 +84,7 @@
       </ul>
     </div>
 
-  </section>
+  </head>
 
   <section class="section2">
     <img src="/images/illustration-editor-desktop.svg" alt="" srcset="">
@@ -161,6 +171,28 @@
     </div>
   </footer>
 
-  
 </body>
+<script>
+  // Show dropdown list (desktop)
+  const showDropDownList = (e) => {
+    const dropDownList = e.querySelector("nav-item-content"),
+    const arrow = e.querySelector("main-nav-arreo");
+    // show dropdown list
+    dropDownList.style.visibility = "visible";
+    dropDownList.style.opacity = "1";
+    //rotate arrow icon
+    arrow.style.transform = "rotate(180deg)";
+  }
+
+   // Hide dropdown list (desktop)
+   const hideDropDownList = (e) => {
+    const dropDownList = e.querySelector("nav-item-content"),
+    const arrow = e.querySelector("main-nav-arreo");
+    // show dropdown list
+    dropDownList.style.visibility = "hidden";
+    dropDownList.style.opacity = "0";
+    //rotate arrow icon
+    arrow.style.transform = "rotate(0deg)";
+  }
+</script>
 </html>

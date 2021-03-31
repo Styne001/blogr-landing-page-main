@@ -8,7 +8,7 @@ body{
 }
 .section1{
     position: relative;
-    background: linear-gradient(hsl(353, 100%, 62%),hsl(13, 100%, 72%));
+    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius: 100px;
     color: white;
     max-width: 100%;
@@ -21,7 +21,7 @@ body{
     height: auto;
     top: -1250px;
     left: -400px;
-    opacity: .4;
+    opacity: .7;
     overflow: hidden;
 }
 
@@ -39,51 +39,41 @@ nav li{
     width:8%;
     display: inline-block;
     position: relative;
-    top: 0px;
+    top: 5px;
     left: 240px;
    
 }
 
-.product{
+
+.main-nav-item a{
     text-decoration: none;
     color: white;
 }
 
-.product:hover{
+.main-nav-item a:hover{
     text-decoration: underline;
 }
 
-.product-content{
-    display: none;
+.main-nav-arrow{
+    transition: all 0.5s ease;
+}
+
+.nav-item-content{
+    list-style-type: none;
+}
+
+
+
+.nav-item-content{
+    visibility: hidden;
     position: absolute;
     z-index: 1;
+    background: white;
+    border-radius: 5;
+    box-shadow: 0 4px 8px 0 gray;
 }
 
-.company{
-    text-decoration: none;
-    color: white;
-}
 
-.company:hover{
-    text-decoration: underline;
-}
-
-.company-content{
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.connect{
-    text-decoration: none;
-    color: white;
-}
-
-.connect-content{
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
 
 .register ul{
     white-space: nowrap;
@@ -104,15 +94,16 @@ nav li{
 }
 
 .register li button{
-    padding: 10px 35px;
+    padding: 14px 40px;
     border-radius: 30px;
     border: none;
     outline: none;
 }
 
-.register li a{
+.register li .sign-up{
     color: hsl(353, 100%, 62%);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .welcome{
