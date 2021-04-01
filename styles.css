@@ -4,9 +4,9 @@ body{
     font-size: 16px;
     margin: 0px 0px;
     max-width: 1440px;
-    line-height: 30px;
+    line-height: 25px;
 }
-.section1{
+header{
     position: relative;
     background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius: 100px;
@@ -15,23 +15,23 @@ body{
     height: 550px;
 }
 
-.section1 .intro{
+.intro{
     position: absolute;
     width: 2950px;
     height: auto;
     top: -1250px;
     left: -400px;
     opacity: .7;
-    overflow: hidden;
+    clip: 0px 10px 100px 0px ;
 }
 
-.section1 .logo{
+.logo{
     position: relative;
     left: 100px;
     top: 60px;
 }
 
-.section1 nav ul{
+nav ul{
     white-space: nowrap;
 }
 
@@ -58,21 +58,47 @@ nav li{
     transition: all 0.5s ease;
 }
 
-.nav-item-content{
-    list-style-type: none;
-}
-
-
 
 .nav-item-content{
-    visibility: hidden;
-    position: absolute;
+    display: none;
+    position: relative;
     z-index: 1;
-    background: white;
-    border-radius: 5;
-    box-shadow: 0 4px 8px 0 gray;
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0px rgb(104, 104, 104);
+    width: 150px;
+} 
+
+.nav-item-content a{
+    color: black;
+    padding: auto;
+    text-decoration: none;
 }
 
+.nav-item-content-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.nav-item-content-list li{
+    display: block;
+    position: relative;
+    left: 0px;
+    padding-bottom: 5px;
+}
+
+.nav-item-content a:hover{
+    background-color: #ddd;
+}
+
+.main-nav-item:hover .nav-item-content{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: -5.0px;
+}
 
 
 .register ul{
@@ -84,7 +110,7 @@ nav li{
     display: inline-block;
     position: relative;
     top: -50px;
-    left: 950px;
+    left: 940px;
    
 }
 
@@ -141,13 +167,17 @@ nav li{
     outline: none;
 }
 
+.section1 .starter button:hover{
+    background-color: hsl(355, 100%, 74%);
+}
+
 .section1 .starter button a{
     text-decoration:none;
     color:hsl(353, 100%, 62%);
 }
 
 .section1 .starter li .learn{
-    background-color: hsl(356, 100%, 66%);
+    background-color: hsl(0, 94%, 70%);
     border-color: white;
     border-style:solid;
     border-width: thin;
@@ -173,7 +203,7 @@ nav li{
 .section2 .design h2{
     color:hsl(208, 49%, 24%);
     position: relative;
-    top: 50px;
+    top: 100px;
     left: 500px;
     font-size: 40px;
 }
@@ -183,7 +213,7 @@ nav li{
     position: relative;
     width: 460px;
     left: 200px;
-    top: 160px;
+    top: 190px;
     box-sizing: border-box;
 }
 
@@ -192,7 +222,7 @@ nav li{
     position: relative;
     width: 450px;
     left: 200px;
-    top: 200px;
+    top: 230px;
     box-sizing: border-box;
 }
 
