@@ -13,6 +13,7 @@ header{
     color: white;
     max-width: 100%;
     height: 550px;
+    overflow: hidden;
 }
 
 .intro{
@@ -54,6 +55,10 @@ nav li{
     text-decoration: underline;
 }
 
+.main-nav-item a:hover + .main-nav-arrow{
+    transform: rotateX(180deg);
+}
+
 .main-nav-arrow{
     transition: all 0.5s ease;
 }
@@ -61,7 +66,7 @@ nav li{
 
 .nav-item-content{
     display: none;
-    position: relative;
+    position: absolute;
     z-index: 1;
     background: whitesmoke;
     border-radius: 5px;
@@ -91,6 +96,7 @@ nav li{
 
 .nav-item-content a:hover{
     background-color: #ddd;
+    font-weight: 600;
 }
 
 .main-nav-item:hover .nav-item-content{
@@ -126,10 +132,21 @@ nav li{
     outline: none;
 }
 
+.register li button:hover{
+    background-color: hsl(355, 100%, 74%);
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+}
+
 .register li .sign-up{
     color: hsl(353, 100%, 62%);
     text-decoration: none;
     font-weight: 600;
+}
+
+.register li .sign-up:hover{
+    color: white;
 }
 
 .welcome{
@@ -169,11 +186,18 @@ nav li{
 
 .section1 .starter button:hover{
     background-color: hsl(355, 100%, 74%);
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
 }
 
 .section1 .starter button a{
     text-decoration:none;
     color:hsl(353, 100%, 62%);
+}
+
+.section1 .starter button a:hover{
+    color: white;
 }
 
 .section1 .starter li .learn{
@@ -183,13 +207,22 @@ nav li{
     border-width: thin;
 }
 
+.section1 .starter li .learn:hover{
+    background-color: white;
+}
+
 .section1 .starter .learn a{
     color: white;
 }
 
+.section1 .starter .learn a:hover{
+    color: hsl(353, 100%, 62%);
+}
 
 .section2{
     position: relative;
+    overflow: hidden;
+    height: 900px;
 }
 
 .section2 img{
@@ -197,13 +230,13 @@ nav li{
     width: 800px;
     height: 800px;
     left: 800px;
-    top: 25px;
+    top: 100px;
 }
 
 .section2 .design h2{
     color:hsl(208, 49%, 24%);
     position: relative;
-    top: 100px;
+    top: 150px;
     left: 500px;
     font-size: 40px;
 }
@@ -211,9 +244,10 @@ nav li{
 .section2 .intro{
     color:hsl(208, 49%, 24%);
     position: relative;
-    width: 460px;
+    width: 500px;
     left: 200px;
-    top: 190px;
+    top: 230px;
+    opacity: 1;
     box-sizing: border-box;
 }
 
@@ -222,7 +256,7 @@ nav li{
     position: relative;
     width: 450px;
     left: 200px;
-    top: 230px;
+    top: 270px;
     box-sizing: border-box;
 }
 
@@ -232,7 +266,8 @@ nav li{
     border-top-right-radius: 100px;
     position: relative;
     height: 400px;
-    top: 400px;
+    z-index: 1;
+    top: 100px;
 }
 
 .section3 img{
@@ -243,7 +278,7 @@ nav li{
 .section3 .state{
     position: relative;
     color: white;
-    top: -500px;
+    top: -480px;
     box-sizing: border-box;
     left: 600px;
     width: 460px;
@@ -255,7 +290,7 @@ nav li{
 
 .section4{
     position: relative;
-    top: 50px;
+    top: -200px;
 }
 
 .section4 img{
@@ -269,7 +304,7 @@ nav li{
 
 .section4 .free{
     position: relative;
-    top: -150px;
+    top: -140px;
     left: 600px;
     width: 460px;
     color:hsl(208, 49%, 24%);
@@ -277,10 +312,11 @@ nav li{
 
 .section4 .tool{
     position: relative;
-    top: -115px;
+    top: -90px;
     left: 600px;
     width: 460px;
     color:hsl(208, 49%, 24%);
+    z-index: 1;
 }
 .section4 div h2{
     font-size: 25px;
@@ -290,7 +326,7 @@ footer{
     position: relative;
     background-color: hsl(240, 10%, 16%);
     border-top-right-radius: 100px;
-    top: 200px;
+    top: 50px;
     height: 300px;
     color:white;
 }
