@@ -3,7 +3,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     margin: 0px 0px;
-    max-width: 1440px;
+    max-width: 100%;
     line-height: 25px;
 }
 header{
@@ -23,7 +23,6 @@ header{
     top: -1250px;
     left: -400px;
     opacity: .7;
-    clip: 0px 10px 100px 0px ;
 }
 
 .logo{
@@ -244,7 +243,7 @@ nav li{
 .section2 .intro{
     color:hsl(208, 49%, 24%);
     position: relative;
-    width: 500px;
+    width: 510px;
     left: 200px;
     top: 230px;
     opacity: 1;
@@ -254,38 +253,50 @@ nav li{
 .section2 .robust{
     color:hsl(208, 49%, 24%);
     position: relative;
-    width: 450px;
+    width: 500px;
     left: 200px;
-    top: 270px;
+    top: 300px;
     box-sizing: border-box;
 }
 
-.section3{
-    background-color: hsl(237, 23%, 32%);
+#sec3{
+    background-color: hsl(237, 17%, 21%);
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
     position: relative;
     height: 400px;
     z-index: 1;
     top: 100px;
+    overflow: hidden;
 }
 
-.section3 img{
-    position:relative;
-    top: -70px;
+#circle{
+    position: absolute;
+    top: -500px;
+    left: -220px;
+    clip: inherit;
+    object-fit: cover;
+    object-position: 0 80%;
+}
+#phones{
+    position:absolute;
+    top: 1480px;
+    left: 120px;
+    z-index: 1;
 }
 
 .section3 .state{
-    position: relative;
+    position: absolute;
     color: white;
-    top: -480px;
+    top: 1645px;
     box-sizing: border-box;
-    left: 600px;
-    width: 460px;
+    left: 735px;
+    width: 490px;
+    z-index: 1;
 }
 
 .section3 .state h2{
-    font-size: 34px;
+    font-size: 35px;
 }
 
 .section4{
@@ -312,7 +323,7 @@ nav li{
 
 .section4 .tool{
     position: relative;
-    top: -90px;
+    top: -70px;
     left: 600px;
     width: 460px;
     color:hsl(208, 49%, 24%);
