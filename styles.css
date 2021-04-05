@@ -17,6 +17,10 @@ header{
     overflow: hidden;
 }
 
+#hamburger{
+    display:none;
+}
+
 .intro{
     position: absolute;
     width: 2950px;
@@ -275,9 +279,6 @@ nav li{
     position: absolute;
     top: -500px;
     left: -220px;
-    clip: inherit;
-    object-fit: cover;
-    object-position: 0 80%;
 }
 #phones{
     position:absolute;
@@ -400,14 +401,19 @@ footer .attribution a{
     color: hsl(240, 2%, 79%);
 }
 
-@media  screen and (min-width: 1450px) {
+@media  screen and (min-width: 1550px) {
     body{
         font-weight: 600;
     }
     
+    .logo{
+        left: 250px;
+        height: 60px;
+        width: 150px;
+    }
     nav li{
-        width:12%;
-        left: 260px;
+        width:10%;
+        left: 450px;
        
     }
 
@@ -418,7 +424,7 @@ footer .attribution a{
     }
 
     .welcome{
-        left: 450px;
+        left: 500px;
         font-size: 63px;
         font-weight: 600;
     }
@@ -502,6 +508,102 @@ footer .attribution a{
     }
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1260px) {
+
+    .logo{
+        position: relative;
+        left: 50px;
+        top: 60px;
+    }
+        
+    nav li{
+        left: 190px;
+       
+    }
+
+    .register li{
+        left: 800px;
+    }
     
+    .welcome{
+        left: 220px;
+        font-size: 52px;
+        font-weight: 400;
+    }
+    
+    .welcome span{
+        font-size: 18px;
+        left: 150px;
+    }
+    
+    .section1 .starter li{
+        left: 360px;
+    }
+    
+    .section2 img{
+        left: 750px;
+        top: 100px;
+        width: 720px;
+        height: 720px;
+    }
+    
+    .section2 .design h2{
+        left: 400px;
+        font-size: 40px;
+    }
+    
+    .section2 .intro{
+        left: 150px;
+        top: 200px;
+    }
+    
+    .section2 .robust{
+        left: 150px;
+        top: 250px;
+    }
+    
+    
+    #circle{
+        position: absolute;
+        top: -400px;
+        left: -140px;
+        width: 912.6px;
+    }
+    #phones{
+        left: 80px;
+    }
+    
+    .section3 .state{
+        left: 650px;
+    }
+    
+    .section3 .state h2{
+        font-size: 35px;
+    }
+    
+   
+    
+    footer img{
+        left: 100px;
+    }
+    
+    footer .product-list{
+        left: 300px;
+    }
+    
+    footer .company-list{
+        left: 550px;
+    }
+    
+    footer .connect-list{
+        left: 800px;
+    }
+    
+    footer .attribution{
+        left: 500px;
+    }
+    
+    @media screen and (max-width: 1260px) {
+    
+    }
 }
